@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+        }
+
+        .left-side {
+            flex: 15%;
+            background-color: black;
+            color: white;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .right-side {
+            flex: 85%;
+            background-color: white;
+            padding: 20px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            position: relative;
+            
+        }
+
+        .frame {
+            flex: 1;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+            padding: 20px;
+            margin-right: 20px;
+            width: 50%;
+        }
+
+        .frame:last-child {
+            margin-right: 0;
+        }
+
+        .frame h2 {
+            margin-top: 0;
+        }
+
+        .creative-story {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+ .top-right-buttons {
+            position: absolute;
+            top: 10px; 
+            right: 10px;
+        }
+        .buttons {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        .buttons button {
+            margin-left: 10px;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .publish {
+            background-color: green;
+            color: white;
+        }
+
+        .preview {
+            background-color: white;
+            color: black;
+        }
+ .buttons button {
+            margin-left: 10px;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+.clear{
+            background-color: green;
+            color: white;
+        }
+
+        .save{
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="left-side">
+       <h3> Form designer </h3>
+      <div class="toolbox-item">Layout</div>
+      <div class="toolbox-item">Label</div>
+      <div class="toolbox-item">Button</div>
+      <div class="toolbox-item">Textbox</div>
+      <div class="toolbox-item">Dropdown</div>
+      <div class="toolbox-item">Check box</div>
+      <div class="toolbox-item">Radio button</div>
+      <div class="toolbox-item">Table</div>
+      <div class="toolbox-item">Navigation link</div>
+      <div class="toolbox-item">Image</div>
+            </div>
+    <div class="right-side">
+        <div class="frame">
+            <h2>Contact form</h2>
+           <tr>
+            <td>Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td><input type="text"name="Name"maxlength="50"/></td><br>
+           </tr>
+           <tr> <br>
+           <td>Title &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td><input type="checkbox"name="Title"value="Mr."/>Mr.
+            <td><input type="checkbox"name="Title"value="Ms."/>Ms.
+            <td><input type="checkbox"name="Title"value="Miss."/>Miss.<br>
+           </td></tr>
+           <tr><br>
+            <td>Gender&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td><input type="radio"name="Gender"value="Male"/>Male
+            <td><input type="radio"name="Gender"value="Female"/>Female
+            <td><input type="radio"name="Gender"value="Perfect not say"/>Perfect not to say<br>
+           </tr>
+            <tr><br>
+            <td>Food choice&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <select name="food choice"id="food_choice">
+            <td><option valuue="vegetarian meal"></option>
+            <td><option valuue="nonvegetarian meal"></option></select><br>
+            </tr>
+<tr><br>
+            <td>Menu &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <table border="2"cellspacing="1"align="center">
+        <tr>
+            <th>Starter</th>
+            <th>Main</th>
+            <th>Desert</th>
+        </tr>
+        <tr>
+            <td>Paneer Fry</td>
+            <td>Mushroom Fried Rice</td>
+            <td>Ice Cream</td>
+        </tr><br>
+    </table>
+<tr><br>
+<td>Location &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<p id="location">100 Gandhi nagar,Coimbatore,641010</p>
+</tr><td>
+<tr><br><br><br><br><br>
+<p> We wish to see you everyone at the event coming <b>November 15,2023</b></p>
+<p> Have a wonderful day!></p>
+</tr>
+        </div>
+        <div class="frame">
+<tr>
+            <p>Lorem ipsum dolor sit amet, consecltetur adipiscing elit,sed do eiusmod tempor 
+incididunt ut labore at dolore magna aliqua. Ut enim ad minim veniam, quis nostud exercitation
+ullamc laboris nisi ut aliquip ex ea commodo conseduat. Duis aute irure dolor in reprehendent in voluptate velit esse cilum dolore
+eu fugiat nulla pariatur. Excepteur sint occaecat cupidatet non proident ,sunt in sulpa qui officia deseruny mollit anim id est laborum </p>
+</tr>    
+<tr><br>
+            <p>Lonerm ipsum dolor sit amet, consecltetur adipiscing elit,sed do eiusmod tempor 
+incididunt ut labore at dolore magna aliqua. Ut enim ad minim veniam, quis nostud exercitation
+ullamc laboris nisi ut aliquip ex ea commodo conseduat. Duis aute irure dolor in reprehendent in voluptate velit esse cilum dolore
+eu fugiat nulla pariatur. Excepteur sint occaecat cupidatet non proident ,sunt in sulpa qui officia deseruny mollit anim id est laborum </p>
+</tr>    
+<tr><br><br><br><br><br><br><br><br>
+<button class="publish">Clear</button>
+            <button class="preview">Save</button> </tr></div>
+<div class="buttons">
+            <button class="publish">publish</button>
+            <button class="preview">preview</button>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
+
+
